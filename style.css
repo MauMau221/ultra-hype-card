@@ -1,0 +1,131 @@
+body {
+    background: #111;
+    color: #fff;
+    font-family: 'Montserrat', Arial, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-container {
+    background: linear-gradient(135deg, #111 80%, #e60000 100%);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.6);
+    border-radius: 24px;
+    padding: 2.5rem 1.5rem 2rem 1.5rem;
+    max-width: 370px;
+    width: 100%;
+    margin: 2rem auto;
+    text-align: center;
+    position: relative;
+}
+
+.logo {
+    width: 90px;
+    margin-bottom: 1.2rem;
+    filter: drop-shadow(0 2px 8px #e60000);
+}
+
+.company-name {
+    font-size: 2rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #e60000;
+    margin-bottom: 0.5rem;
+    font-family: 'Montserrat', Arial, sans-serif;
+    text-shadow: 0 2px 8px rgba(230,0,0,0.2);
+}
+
+.slogan {
+    font-size: 1.05rem;
+    color: #fff;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+    opacity: 0.85;
+}
+
+.services ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 2rem 0;
+}
+
+.services li {
+    font-size: 1.1rem;
+    margin: 0.7rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7rem;
+    background: rgba(255,255,255,0.03);
+    border-radius: 12px;
+    padding: 0.6rem 0.8rem;
+    box-shadow: 0 2px 8px rgba(230,0,0,0.08);
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+.icon {
+    font-size: 1.5rem;
+    transition: transform 0.3s;
+}
+
+.services li:hover .icon {
+    transform: scale(1.2) rotate(-8deg);
+}
+
+.services li:hover {
+    background: rgba(230,0,0,0.12);
+    box-shadow: 0 4px 16px rgba(230,0,0,0.18);
+}
+
+.whatsapp-btn {
+    display: block;
+    width: 100%;
+    background: linear-gradient(90deg, #e60000 60%, #fff 100%);
+    color: #111;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 16px;
+    padding: 1rem 0;
+    margin: 1.2rem 0 0 0;
+    text-decoration: none;
+    box-shadow: 0 4px 16px rgba(230,0,0,0.18);
+    transition: background 0.3s, color 0.3s, transform 0.2s;
+    cursor: pointer;
+}
+
+.whatsapp-btn:hover {
+    background: linear-gradient(90deg, #fff 0%, #e60000 100%);
+    color: #e60000;
+    transform: scale(1.05);
+    box-shadow: 0 8px 32px rgba(230,0,0,0.28);
+}
+
+footer {
+    font-size: 0.95rem;
+    color: #fff;
+    opacity: 0.6;
+    margin-top: 1.5rem;
+    text-align: center;
+    padding-bottom: 0.7rem;
+}
+
+@media (max-width: 480px) {
+    .card-container {
+        padding: 1.2rem 0.5rem 1.2rem 0.5rem;
+        max-width: 98vw;
+    }
+    .company-name {
+        font-size: 1.3rem;
+    }
+    .logo {
+        width: 60px;
+    }
+    .whatsapp-btn {
+        font-size: 1rem;
+        padding: 0.8rem 0;
+    }
+}
