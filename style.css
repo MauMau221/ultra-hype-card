@@ -6,208 +6,190 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .card-container {
-    background: linear-gradient(135deg, #111 80%, #e60000 100%);
-    box-shadow: 0 8px 32px rgba(0,0,0,0.6);
-    border-radius: 24px;
-    padding: 2.5rem 1.5rem 2rem 1.5rem;
-    max-width: 370px;
-    width: 100%;
-    margin: 2rem auto;
+    max-width: 420px;
+    margin: 32px auto 0 auto;
+    background: transparent;
+    padding: 0 16px 32px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
     text-align: center;
-    position: relative;
+    margin-bottom: 32px;
 }
 
 .logo {
-    width: 90px;
-    margin-bottom: 1.2rem;
-    filter: drop-shadow(0 2px 8px #e60000);
+    width: 110px;
+    margin-bottom: 18px;
+    filter: drop-shadow(0 4px 16px #e60000aa);
 }
 
 .company-name {
-    font-size: 2rem;
-    font-weight: 800;
-    letter-spacing: 2px;
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: 0 0 8px 0;
+    line-height: 1.2;
+}
+
+.company-name .red {
     color: #e60000;
-    margin-bottom: 0.5rem;
-    font-family: 'Montserrat', Arial, sans-serif;
-    text-shadow: 0 2px 8px rgba(230,0,0,0.2);
+    font-weight: 700;
 }
 
 .slogan {
-    font-size: 1.05rem;
+    font-size: 1rem;
     color: #fff;
-    margin-bottom: 1.5rem;
-    font-weight: 500;
     opacity: 0.85;
+    margin-bottom: 0;
+    font-weight: 500;
 }
 
-.services ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+.services {
+    width: 100%;
+    margin-bottom: 32px;
+}
+
+.service-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    justify-content: center;
+}
+
+.service-card {
+    background: #111;
+    border: 2px solid #e60000;
+    border-radius: 18px;
+    padding: 18px 22px;
+    min-width: 140px;
+    max-width: 170px;
     display: flex;
     flex-direction: column;
-    gap: 18px;
     align-items: center;
-}
-
-.services li {
-    font-size: 1.1rem;
-    margin: 0.7rem 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.7rem;
-    border-radius: 12px;
-    padding: 0.6rem 0.8rem;
-    box-shadow: 0 2px 8px rgba(230,0,0,0.08);
-    transition: background 0.3s, box-shadow 0.3s;
-}
-
-.service-link {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    background: linear-gradient(90deg, #111 80%, #e60000 100%);
-    color: #fff;
-    padding: 16px 28px;
-    border-radius: 40px;
-    border: 2px solid #e60000;
-    font-size: 1.15rem;
-    font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
-    font-weight: 600;
-    box-shadow: 0 4px 18px rgba(230,0,0,0.10);
     text-decoration: none;
-    transition: 
-        background 0.3s,
-        box-shadow 0.3s,
-        transform 0.2s,
-        color 0.3s;
-    position: relative;
-    overflow: hidden;
-}
-
-.icon {
-    font-size: 1.5rem;
-    transition: transform 0.3s;
-}
-
-.service-link .icon {
-    font-size: 1.6em;
-    filter: drop-shadow(0 0 4px #e60000);
-    transition: transform 0.3s;
-}
-
-.services li:hover .icon {
-    transform: scale(1.2) rotate(-8deg);
-}
-
-.service-link:hover {
-    background: linear-gradient(90deg, #e60000 60%, #111 100%);
     color: #fff;
-    box-shadow: 0 8px 32px rgba(230,0,0,0.18);
-    transform: translateY(-2px) scale(1.04);
+    box-shadow: 0 2px 12px rgba(230,0,0,0.08);
+    transition: 
+        background 0.25s,
+        transform 0.18s,
+        box-shadow 0.25s;
+    font-weight: 600;
+    font-size: 1.05rem;
+    cursor: pointer;
 }
 
-.service-link:hover .icon {
-    transform: scale(1.2) rotate(-8deg);
-    filter: drop-shadow(0 0 8px #fff);
+.service-card .icon {
+    font-size: 2.1em;
+    margin-bottom: 8px;
+    transition: transform 0.25s;
 }
 
-.services li:hover {
-    background: rgba(230,0,0,0.12);
-    box-shadow: 0 4px 16px rgba(230,0,0,0.18);
+.service-card .title {
+    text-align: center;
+    font-size: 1em;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.service-card:hover,
+.service-card:focus {
+    background: #b80000;
+    color: #fff;
+    transform: scale(1.06);
+    box-shadow: 0 6px 24px rgba(230,0,0,0.18);
+}
+
+.service-card:hover .icon,
+.service-card:focus .icon {
+    transform: scale(1.18) rotate(-6deg);
 }
 
 .whatsapp-btn {
     display: block;
     width: 100%;
-    background: linear-gradient(90deg, #e60000 60%, #fff 100%);
-    color: #111;
-    font-size: 1.2rem;
-    font-weight: 700;
+    background: #e60000;
+    color: #fff;
     border: none;
-    border-radius: 16px;
-    padding: 1rem 0;
-    margin: 1.2rem 0 0 0;
+    border-radius: 32px;
+    font-size: 1.15rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 18px 0;
+    margin-top: 10px;
     text-decoration: none;
-    box-shadow: 0 4px 16px rgba(230,0,0,0.18);
-    transition: background 0.3s, color 0.3s, transform 0.2s;
-    cursor: pointer;
+    box-shadow: 0 2px 12px rgba(230,0,0,0.12);
+    transition: 
+        background 0.22s,
+        transform 0.18s,
+        box-shadow 0.22s;
+    letter-spacing: 0.5px;
 }
 
-.whatsapp-btn:hover {
-    background: linear-gradient(90deg, #fff 0%, #e60000 100%);
-    color: #e60000;
-    transform: scale(1.05);
-    box-shadow: 0 8px 32px rgba(230,0,0,0.28);
+.whatsapp-btn:hover,
+.whatsapp-btn:focus {
+    background: #b80000;
+    transform: scale(1.03);
+    box-shadow: 0 6px 24px rgba(230,0,0,0.22);
 }
 
 footer {
-    font-size: 0.95rem;
+    text-align: center;
     color: #fff;
     opacity: 0.6;
-    margin-top: 1.5rem;
-    text-align: center;
-    padding-bottom: 0.7rem;
+    font-size: 0.95rem;
+    margin: 32px 0 12px 0;
+    letter-spacing: 0.5px;
 }
 
-/* Responsividade para mobile */
-@media (max-width: 600px) {
+.service-card {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.6s, transform 0.6s;
+}
+.service-card.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsivo */
+@media (max-width: 700px) {
     .card-container {
-        padding: 16px 4px;
         max-width: 98vw;
+        padding: 0 4vw 24px 4vw;
     }
-
-    header .logo {
-        width: 120px;
-        margin-bottom: 12px;
-    }
-
-    .company-name {
-        font-size: 1.3rem;
-        text-align: center;
-    }
-
-    .slogan {
-        font-size: 1rem;
-        text-align: center;
-        margin-bottom: 18px;
-    }
-
-    .services ul {
+    .service-cards {
+        flex-direction: column;
         gap: 14px;
+        align-items: center;
     }
-
-    .service-link {
-        font-size: 1.05rem;
-        padding: 12px 10px;
-        border-radius: 32px;
+    .service-card {
+        width: 100%;
+        max-width: 340px;
         min-width: 0;
-        width: 100%;
-        justify-content: center;
-    }
-
-    .service-link .icon {
-        font-size: 1.3em;
-    }
-
-    .whatsapp-btn {
-        font-size: 1.1rem;
         padding: 16px 0;
-        width: 100%;
-        border-radius: 32px;
-        margin-top: 18px;
+        font-size: 1rem;
     }
-
+    .logo {
+        width: 90px;
+    }
+    .company-name {
+        font-size: 1.15rem;
+    }
+    .slogan {
+        font-size: 0.95rem;
+    }
+    .whatsapp-btn {
+        font-size: 1rem;
+        padding: 14px 0;
+    }
     footer {
-        font-size: 0.9rem;
-        padding: 10px 0;
-        text-align: center;
+        font-size: 0.85rem;
+        margin: 24px 0 8px 0;
     }
 }
