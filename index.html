@@ -1,48 +1,152 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ultra Hype Estética Automotiva</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
 </head>
+
 <body>
-    <div class="card-container">
-        <header>
-            <img src="assets/logo.png" alt="Ultra Hype Logo" class="logo">
-            <h1 class="company-name">
-                <span class="red">Ultra Hype</span> Estética Automotiva
-            </h1>
-            <p class="slogan">Seu carro e sua casa no estado máximo de cuidado</p>
-        </header>
-        <section class="services">
-            <div class="service-cards">
-                <a href="https://wa.me/5511934199864?text=Gostaria%20de%20saber%20mais%20sobre%20Higienização%20Automotiva" target="_blank" class="service-card">
-                    <span class="icon">🚗</span>
-                    <span class="title">Higienização Automotiva</span>
-                </a>
-                <a href="https://wa.me/5511934199864?text=Gostaria%20de%20saber%20mais%20sobre%20Sofás%20e%20Estofados" target="_blank" class="service-card">
-                    <span class="icon">🛋</span>
-                    <span class="title">Sofás e Estofados</span>
-                </a>
-                <a href="https://wa.me/5511934199864?text=Gostaria%20de%20saber%20mais%20sobre%20Colchões" target="_blank" class="service-card">
-                    <span class="icon">🛏</span>
-                    <span class="title">Colchões</span>
-                </a>
-                <a href="https://wa.me/5511934199864?text=Gostaria%20de%20saber%20mais%20sobre%20Ar-Condicionado" target="_blank" class="service-card">
-                    <span class="icon">❄️</span>
-                    <span class="title">Ar-Condicionado</span>
+    <nav class="menu">
+        <ul>
+            <li><a href="#inicio" class="active">Início</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#galeria">Galeria</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+    <div class="menu-space"></div>
+
+    <header class="main-header" id="inicio">
+        <img src="assets/logo.png" alt="Ultra Hype Logo" class="logo">
+        <h1 class="company-name">
+            <span class="red">Ultra Hype</span> Estética Automotiva
+        </h1>
+        <p class="slogan">Seu carro e sua casa no estado máximo de cuidado</p>
+    </header>
+
+    <section class="intro" id="intro">
+        <div class="intro-content">
+            <div class="intro-text">
+                <h2>Ultra Hype: Limpeza e Higienização Profissional</h2>
+                <p>
+                    Cuidamos do seu carro, casa e empresa com máxima excelência.<br>
+                    Higienização de veículos, estofados, colchões e ar-condicionado.<br>
+                    Atendimento rápido, seguro e personalizado.
+                </p>
+                <a href="https://wa.me/5511934199864" target="_blank" class="whatsapp-btn">
+                    📲 Solicite seu orçamento
                 </a>
             </div>
-        </section>
-        <a href="https://wa.me/5511934199864" target="_blank" class="whatsapp-btn">
-            📲 Fale Conosco no WhatsApp
-        </a>
-    </div>
+            <div class="intro-img-wrapper">
+                <img src="assets/teste1.jpg" alt="Equipe Ultra Hype em ação" class="intro-img">
+            </div>
+        </div>
+    </section>
+
+    <section class="services-list" id="servicos">
+        <h2>Nossos Serviços</h2>
+        <div class="services-grid">
+            <div class="service-item">
+                <img src="assets/hig_automotivo.png" alt="Higienização Automotiva">
+                <h3>Higienização Automotiva</h3>
+                <p>Limpeza profunda interna e externa, remoção de manchas, odores e ácaros. Seu carro como novo!</p>
+                <a href="https://wa.me/5511934199864?text=Gostaria%20de%20saber%20mais%20sobre%20Higienização%20Automotiva"
+                    target="_blank" class="service-contact">Solicitar orçamento</a>
+            </div>
+            <div class="service-item">
+                <img src="assets/hig_sofa.png" alt="Sofás e Estofados">
+                <h3>Sofás e Estofados</h3>
+                <p>Higienização profissional de sofás, poltronas e cadeiras. Elimine sujeira, fungos e bactérias.</p>
+                <a href="https://wa.me/5511934199864?text=Gostaria%20de%20saber%20mais%20sobre%20Sofás%20e%20Estofados"
+                    target="_blank" class="service-contact">Solicitar orçamento</a>
+            </div>
+            <div class="service-item">
+                <img src="assets/hig_colcha.png" alt="Colchões">
+                <h3>Colchões</h3>
+                <p>Limpeza e higienização de colchões para noites mais saudáveis e tranquilas.</p>
+                <a href="https://wa.me/5511934199864?text=Gostaria%20de%20saber%20mais%20sobre%20Colchões"
+                    target="_blank" class="service-contact">Solicitar orçamento</a>
+            </div>
+            <div class="service-item">
+                <img src="assets/hig_cadeira.jpg" alt="Ar-Condicionado">
+                <h3>Higienização de Assentos em Tecido</h3>
+                <p>Remoção profunda de sujeiras, manchas e ácaros dos assentos em tecido, deixando-os limpos,
+                    higienizados e com aspecto renovado. Proporciona mais saúde, conforto e durabilidade para seus
+                    estofados.</p>
+                <a href="https://wa.me/5511934199864?text=Gostaria%20de%20saber%20mais%20sobre%20Higienização%20de%20Assentos%20em%20Tecido"
+                    target="_blank" class="service-contact">Solicitar orçamento</a>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="galeria" style="background:#fff; padding:48px 0;">
+        <h2 style="text-align:center; color:#e53935; margin-bottom:32px;">Galeria</h2>
+        <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:24px; max-width:1100px; margin:0 auto;">
+            <img src="assets/teste1.jpg" alt="Galeria 1"
+                style="width:220px; border-radius:12px; border:2px solid #e53935;">
+            <img src="assets/teste1.jpg" alt="Galeria 2"
+                style="width:220px; border-radius:12px; border:2px solid #e53935;">
+            <img src="assets/teste3.jpg" alt="Galeria 3"
+                style="width:220px; border-radius:12px; border:2px solid #e53935;">
+            <!-- Adicione mais imagens conforme desejar -->
+        </div>
+    </section>
+
+    <section class="about" id="sobre">
+        <h2>Por que escolher a Ultra Hype?</h2>
+        <ul>
+            <li>Equipe especializada e equipamentos modernos</li>
+            <li>Atendimento personalizado</li>
+            <li>Produtos biodegradáveis e seguros</li>
+            <li>Garantia de satisfação</li>
+        </ul>
+    </section>
+
+    <section id="contato" style="background:#fff; padding:48px 0;">
+        <h2 style="text-align:center; color:#e53935; margin-bottom:32px;">Contato</h2>
+        <div style="max-width:500px; margin:0 auto; text-align:center;">
+            <p style="font-size:1.1rem; color:#222;">Entre em contato pelo WhatsApp ou envie um e-mail:</p>
+            <a href="https://wa.me/5511934199864" target="_blank" class="whatsapp-btn" style="margin-bottom:16px;">📲
+                WhatsApp</a>
+            <p style="margin-top:16px; color:#222;">E-mail: <a href="mailto:contato@ultrahype.com.br"
+                    style="color:#e53935; text-decoration:none;">contato@ultrahype.com.br</a></p>
+            <p style="margin-top:8px; color:#222;">Telefone: <a href="tel:+5511934199864"
+                    style="color:#e53935; text-decoration:none;">(11) 93419-9864</a></p>
+        </div>
+    </section>
+
     <footer>
         Ultra Hype © 2025 - Todos os direitos reservados
     </footer>
-    <script src="script.js"></script>
+    <script>
+        // Scroll suave para navegação
+        document.querySelectorAll('nav.menu a').forEach(link => {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelectorAll('nav.menu a').forEach(a => a.classList.remove('active'));
+                this.classList.add('active');
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    window.scrollTo({
+                        top: target.offsetTop - document.querySelector('.menu').offsetHeight,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
 </body>
+
 </html>
